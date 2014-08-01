@@ -25,11 +25,11 @@ PLATFORM="$1"
   rm -f .bash_profile .profile .bashrc .bash-config/current-platform .gitconfig
 
   # Install new symlinks
-  ln -s .bash-config/bash_profile .bash_profile
-  ln -s .bash-config/profile      .profile
-  ln -s .bash-config/bashrc       .bashrc
-  ln -s .bash-config/gitconfig    .gitconfig
-  ln -s ".bash-config/platform/${PLATFORM}" .bash-config/current-platform
+  ln -s .bash-config/bash_profile "${HOME}/.bash_profile"
+  ln -s .bash-config/profile      "${HOME}/.profile"
+  ln -s .bash-config/bashrc       "${HOME}/.bashrc"
+  ln -s .bash-config/gitconfig    "${HOME}/.gitconfig"
+  ln -s "${HOME}/.bash-config/platform/${PLATFORM}" "${HOME}/.bash-config/current-platform"
 )
 
 # Platform specific installs
