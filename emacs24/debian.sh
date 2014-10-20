@@ -13,7 +13,7 @@ sudo apt-get build-dep emacs
     sudo chmod 777 /usr/local/src/emacs
 
     git clone --depth 1 \
-	https://git.savannah.gnu.org/emacs.git \
+	git://git.savannah.gnu.org/emacs.git \
 	/usr/local/src/emacs
 
     cd /usr/local/src/emacs
