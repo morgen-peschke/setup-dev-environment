@@ -1,0 +1,6 @@
+Install Cygwin   : https://www.cygwin.com/
+Install Emacs    : http://ftp.gnu.org/gnu/emacs/windows/
+Install GnuWin32 : http://gnuwin32.sourceforge.n
+
+Set Path like this:
+/usr/bin:/usr/sbin:/usr/local/bin:/cygdrive/c/gnuwin32/bin:/cygdrive/c/Emacs/bin:/home/morgen.peschke/bin:$PATH
