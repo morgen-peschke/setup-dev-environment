@@ -1,0 +1,10 @@
+* Extra Installs
+  - Cygwin   :: https://www.cygwin.com/
+  - Emacs    :: http://ftp.gnu.org/gnu/emacs/windows/
+  - GnuWin32 :: http://gnuwin32.sourceforge.n
+  - Console2 :: http://sourceforge.net/projects/console/
+* Environmental Variables
+** PATH
+   /usr/bin:/usr/sbin:/usr/local/bin:/cygdrive/c/gnuwin32/bin:/cygdrive/c/Emacs/bin:/home/morgen.peschke/bin:$PATH
+** HOME
+   <CYGPATH>\home\user.dir
