@@ -2,6 +2,6 @@
 PLATFORM="$1"
 [ -z "$PLATFORM" ] && PLATFORM="debian"
 
-./setup-bash     "$PLATFORM"
-./setup-keyboard "$PLATFORM"
-./setup-emacs    "$PLATFORM"
+./setup-bash.sh     "$PLATFORM"
+./setup-keyboard.sh "$PLATFORM"
+./setup-emacs.sh    "$PLATFORM"
