@@ -7,7 +7,7 @@ PLATFORM="$1"
 #########################
 
 ( cd "${HOME}"
-  
+
   # Grab the settings repo
   mkdir -p .bash-config
   if [ -d .bash-config/.git ]; then
@@ -15,9 +15,9 @@ PLATFORM="$1"
 	  cd .bash-config
 	  git pull
       )
-  else 
+  else
       git clone --depth 1 \
-	  git://github.com/morgen-peschke/bash-config.git \
+	  https://github.com/morgen-peschke/bash-config.git \
 	  .bash-config
   fi
 
