@@ -23,3 +23,8 @@ which ag >/dev/null || (
 which keepass2 >/dev/null || (
     sudo apt-get install keepassx
 )
+
+# Install xclip
+which xclip >/dev/null || (
+    sudo apt-get install xclip
+)
