@@ -19,7 +19,7 @@ which ag >/dev/null || (
     sudo rm -rf /usr/local/src/silversearcher
 )
 
-# Install Keepass2
+# Install KeepassX
 which keepass2 >/dev/null || (
-    sudo apt-get install keepass2
+    sudo apt-get install keepassx
 )
