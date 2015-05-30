@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Ensure Dependencies
-sudo apt-get install git-core autoconf automake
+sudo apt-get install git-core autoconf automake texinfo
 
 sudo apt-get install libxaw7-dev libxpm-dev libpng12-dev libtiff5-dev libgif-dev libjpeg8-dev libgtk2.0-dev libncurses5-dev
 
