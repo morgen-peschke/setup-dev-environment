@@ -26,9 +26,9 @@ sudo apt-get build-dep emacs
     # Configure
     ./autogen
     ./configure --prefix /usr/local/etc/emacs24
-    make && sudo make install
-
-    # Cleanup
-    cd /
-    sudo rm -rf /usr/local/src/emacs
+    make bootstrap && sudo make install && {
+            # Cleanup only if no errors
+            cd /
+            sudo rm -rf /usr/local/src/emacs
+        }
 )
