@@ -12,9 +12,14 @@ sudo apt-get build-dep emacs
     sudo mkdir -p  /usr/local/src/emacs
     sudo chmod 777 /usr/local/src/emacs
 
-    git clone --depth 1 \
-	git://git.savannah.gnu.org/emacs.git \
-	/usr/local/src/emacs
+    if [ -e /usr/local/src/emacs/.git ]; then
+        cd /usr/local/src/emacs
+        git pull
+    else
+        git clone --depth 1 \
+	    git://git.savannah.gnu.org/emacs.git \
+	    /usr/local/src/emacs
+    fi
 
     cd /usr/local/src/emacs
 
