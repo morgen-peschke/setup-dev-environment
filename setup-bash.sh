@@ -30,6 +30,7 @@ PLATFORM="$1"
   ln -s .bash-config/bashrc       "${HOME}/.bashrc"
   ln -s .bash-config/gitconfig    "${HOME}/.gitconfig"
   ln -s "${HOME}/.bash-config/platform/${PLATFORM}" "${HOME}/.bash-config/current-platform"
+  ln -n "${HOME}/.bash-config/platform/${PLATFORM}-bin" "${HOME}/.bash-config/current-platform-bin"
 )
 
 # Platform specific installs
