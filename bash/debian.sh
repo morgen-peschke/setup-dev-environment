@@ -20,8 +20,11 @@ which ag >/dev/null || (
 )
 
 # Install KeepassX
-which keepass2 >/dev/null || (
+which keepassx >/dev/null || (
     sudo apt-get install keepassx
+)
+which keepass2 >/dev/null || (
+    sudo apt-get install keepass2
 )
 
 # Install xclip
