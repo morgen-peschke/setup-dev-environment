@@ -1,0 +1,1 @@
+brew install ag coreutils ispell
