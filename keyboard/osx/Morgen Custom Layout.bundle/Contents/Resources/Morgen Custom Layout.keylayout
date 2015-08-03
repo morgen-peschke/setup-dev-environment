@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 2.2.8 on 2015-07-27 at 21:29 (PDT)-->
-<!--Last edited by Ukelele version 2.2.8 on 2015-07-27 at 21:32 (PDT)-->
+<!--Last edited by Ukelele version 2.2.8 on 2015-08-03 at 11:37 (PDT)-->
 <keyboard group="0" id="9122" name="Morgen Custom Layout" maxout="1">
     <layouts>
         <!-- http://developer.apple.com/library/mac/documentation/Carbon/Reference/Gestalt_Manager/Reference/reference.html#//apple_ref/doc/uid/TP30000036-CH4g-KeyboardSelectors -->
@@ -38,9 +38,7 @@
         <layout first="40" last="40" modifiers="modifiers" mapSet="ANSI"/>
         <layout first="41" last="41" modifiers="modifiers" mapSet="ISO"/>
         <layout first="42" last="42" modifiers="modifiers" mapSet="JIS"/>
-        <layout first="43" last="44" modifiers="modifiers" mapSet="ISO">
-            <!-- VirtualBox -->
-        </layout>
+        <layout first="43" last="44" modifiers="modifiers" mapSet="ISO"/>
         <layout first="194" last="194" modifiers="modifiers" mapSet="JIS"/>
         <layout first="195" last="195" modifiers="modifiers" mapSet="ANSI"/>
         <layout first="196" last="196" modifiers="modifiers" mapSet="ISO"/>
@@ -227,7 +225,7 @@
             <!--key code="58"  output=""/>		<! Left Option 		-->
             <!--key code="55"  output=""/>		<! Left Command 	-->
             <key code="66" output="&#x001D;"/>
-            <key code="67" output="-"/>
+            <key code="67" output="*"/>
             <!-- Num * 			-->
             <key code="69" output="+"/>
             <!-- Num + 			-->
@@ -235,24 +233,24 @@
             <key code="71" output="&#x001B;"/>
             <!-- Num Lock 		-->
             <key code="72" output="&#x001F;"/>
-            <key code="75" output="*"/>
+            <key code="75" output="/"/>
             <!-- Num / 			-->
             <key code="76" output="&#x0003;"/>
             <!-- Enter 			-->
             <key code="77" output="&#x001E;"/>
-            <key code="78" output="+"/>
+            <key code="78" output="-"/>
             <!-- Num - 			-->
             <key code="79" output="&#x0010;"/>
             <key code="80" output="&#x0010;"/>
-            <key code="81" output="/"/>
+            <key code="81" output=""/>
             <!-- Num = 			-->
             <key code="82" output="0"/>
             <!-- Num 0 			-->
-            <key code="83" output="7"/>
+            <key code="83" output="1"/>
             <!-- Num 1 			-->
-            <key code="84" output="8"/>
+            <key code="84" output="2"/>
             <!-- Num 2 			-->
-            <key code="85" output="9"/>
+            <key code="85" output="3"/>
             <!-- Num 3 			-->
             <key code="86" output="4"/>
             <!-- Num 4 			-->
@@ -260,11 +258,11 @@
             <!-- Num 5 			-->
             <key code="88" output="6"/>
             <!-- Num 6 			-->
-            <key code="89" output="1"/>
+            <key code="89" output="7"/>
             <!-- Num 7 			-->
-            <key code="91" output="2"/>
+            <key code="91" output="8"/>
             <!-- Num 8 			-->
-            <key code="92" output="3"/>
+            <key code="92" output="9"/>
             <!-- Num 9 			-->
             <key code="96" output="&#x0010;"/>
             <!-- F5 			-->
@@ -452,7 +450,7 @@
             <key code="53" output="&#x001B;"/>
             <!-- Esc 			-->
             <key code="64" output="&#x0010;"/>
-            <key code="65" output=";"/>
+            <key code="65" output="x"/>
             <!-- Decimal Sep. 	-->
             <!-- modifiers -->
             <!--*-->
@@ -460,34 +458,34 @@
             <!--key code="58"  output=""/>		<! Left Option 		-->
             <!--key code="55"  output=""/>		<! Left Command 	-->
             <key code="66" output="&#x001D;"/>
-            <key code="67" output="$"/>
+            <key code="67" output=")"/>
             <!-- Num * 			-->
-            <key code="69" output=","/>
+            <key code="69" output="|"/>
             <!-- Num + 			-->
             <key code="70" output="&#x001C;"/>
             <key code="71" output="&#x001B;"/>
             <!-- Num Lock 		-->
             <!--*-->
             <key code="72" output="&#x001F;"/>
-            <key code="75" output=")"/>
+            <key code="75" output="("/>
             <!-- Num / 			-->
             <key code="76" output="&#x0003;"/>
             <!-- Enter 			-->
             <!--*-->
             <key code="77" output="&#x001E;"/>
-            <key code="78" output=","/>
+            <key code="78" output="&#x0026;"/>
             <!-- Num - 			-->
             <key code="79" output="&#x0010;"/>
             <key code="80" output="&#x0010;"/>
-            <key code="81" output="("/>
+            <key code="81" output=""/>
             <!-- Num = 			-->
             <key code="82" output="\"/>
             <!-- Num 0 			-->
-            <key code="83" output="="/>
+            <key code="83" output="A"/>
             <!-- Num 1 			-->
-            <key code="84" output="x"/>
+            <key code="84" output="B"/>
             <!-- Num 2 			-->
-            <key code="85" output=":"/>
+            <key code="85" output="C"/>
             <!-- Num 3 			-->
             <key code="86" output="D"/>
             <!-- Num 4 			-->
@@ -495,11 +493,11 @@
             <!-- Num 5 			-->
             <key code="88" output="F"/>
             <!-- Num 6 			-->
-            <key code="89" output="A"/>
+            <key code="89" output=""/>
             <!-- Num 7 			-->
-            <key code="91" output="B"/>
+            <key code="91" output="{"/>
             <!-- Num 8 			-->
-            <key code="92" output="C"/>
+            <key code="92" output="}"/>
             <!-- Num 9 			-->
             <key code="96" output="&#x0010;"/>
             <!-- F5 			-->
