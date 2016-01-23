@@ -1,26 +1,27 @@
-brew install autoconf automake
+brew install autoconf automake ghostscript
 (
-    # Grab the source from github
-    sudo mkdir -p  /usr/local/src/emacs
-    sudo chmod 777 /usr/local/src/emacs
+    SRC_DIR="/tmp/src/emacs"
 
-    if [ -e /usr/local/src/emacs/.git ]; then
-        cd /usr/local/src/emacs
+    # Grab the source from github
+    mkdir -p "$SRC_DIR"
+
+    if [ -e "$SRC_DIR"/.git ]; then
+        cd "$SRC_DIR"
         git pull
     else
         git clone --depth 1 \
 	    git://git.savannah.gnu.org/emacs.git \
-	    /usr/local/src/emacs
+	    "$SRC_DIR"
     fi
 
-    cd /usr/local/src/emacs
+    cd "$SRC_DIR"
 
     # Configure
     ./autogen
     ./configure
     make bootstrap && sudo make install && {
-        sudo cp /usr/local/src/emacs/nextstep/Emacs.app /Applications/
-        sudo rm -rf /usr/local/src/emacs
+        sudo cp -R "$SRC_DIR"/nextstep/Emacs.app /Applications/
+        #sudo rm -rf "$SRC_DIR"
     }
 
 )

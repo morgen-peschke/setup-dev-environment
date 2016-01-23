@@ -34,4 +34,4 @@ PLATFORM="$1"
 )
 
 # Platform specific installs
-sudo ./bash/"${PLATFORM}.sh"
+./bash/"${PLATFORM}.sh"
