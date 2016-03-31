@@ -31,3 +31,9 @@ which keepass2 >/dev/null || (
 which xclip >/dev/null || (
     sudo apt-get install xclip
 )
+
+# Install icdiff
+which icdiff >/dev/null || (
+    curl -s https://raw.githubusercontent.com/jeffkaufman/icdiff/release-1.7.3/icdiff | \
+        sudo tee /usr/local/bin/icdiff > /dev/null && sudo chmod ugo+rx /usr/local/bin/icdiff
+)
