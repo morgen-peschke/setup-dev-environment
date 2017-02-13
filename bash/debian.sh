@@ -19,18 +19,8 @@ which ag >/dev/null || (
     sudo rm -rf /usr/local/src/silversearcher
 )
 
-# Install KeepassX
-which keepassx >/dev/null || (
-    sudo apt-get install keepassx
-)
-which keepass2 >/dev/null || (
-    sudo apt-get install keepass2
-)
-
-# Install xclip
-which xclip >/dev/null || (
-    sudo apt-get install xclip
-)
+# Install Keepass and xclip
+sudo apt-get install -y keepassx keepass2 xclip
 
 # Install icdiff
 which icdiff >/dev/null || (
