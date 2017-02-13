@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 PLATFORM="$1"
 [ -z "$PLATFORM" ] && PLATFORM="debian"
 
