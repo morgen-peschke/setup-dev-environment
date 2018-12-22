@@ -29,6 +29,7 @@ PLATFORM="$1"
   ln -s .bash-config/profile      "${HOME}/.profile"
   ln -s .bash-config/bashrc       "${HOME}/.bashrc"
   ln -s .bash-config/gitconfig    "${HOME}/.gitconfig"
+  ln -s .bash-config/jqconfig     "${HOME}/.jq"
   ln -s "${HOME}/.bash-config/platform/${PLATFORM}" "${HOME}/.bash-config/current-platform"
   ln -s "${HOME}/.bash-config/platform/${PLATFORM}-bin" "${HOME}/.bash-config/current-platform-bin"
 )
