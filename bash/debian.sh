@@ -74,6 +74,5 @@ hash docker >/dev/null || (
     sudo groupadd docker || true
     sudo usermod -aG docker $USER
 
-    echo "You'll need to logout and back in to use Docker without sudo
-    "
+    echo "You'll need to logout and back in to use Docker without sudo"
 )
