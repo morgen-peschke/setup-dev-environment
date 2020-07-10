@@ -1,4 +1,5 @@
-brew install autoconf automake ghostscript texinfo
+#!/bin/bash -ex
+brew install autoconf automake ghostscript texinfo gnutls
 (
     SRC_DIR="/tmp/src/emacs"
     export PATH="/usr/local/opt/texinfo/bin:$PATH"
@@ -18,7 +19,7 @@ brew install autoconf automake ghostscript texinfo
     cd "$SRC_DIR"
 
     # Configure
-    ./autogen
+    ./autogen.sh
     ./configure --with-gnutls=no
     make bootstrap && sudo make install && {
         sudo cp -R "$SRC_DIR"/nextstep/Emacs.app /Applications/

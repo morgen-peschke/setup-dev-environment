@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xe
 (
     # Pull down settings
     mkdir -p ~/.emacs.d
