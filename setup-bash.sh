@@ -22,7 +22,7 @@ PLATFORM="$1"
   fi
 
   # Clear old symlinks
-  rm -f .bash_profile .profile .bashrc .bash-config/current-platform .gitconfig
+  rm -f .bash_profile .profile .bashrc .bash-config/current-platform .gitconfig .jq
 
   # Install new symlinks
   ln -s .bash-config/bash_profile "${HOME}/.bash_profile"
