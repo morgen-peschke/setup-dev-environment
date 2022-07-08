@@ -12,5 +12,6 @@ elif [ "$PLATFORM" = "osx" ]; then
         cd keyboard/osx
         sudo cp -R "Morgen Custom Layout.bundle" "/Library/Keyboard Layouts/"
         echo "You will probably need to restart to get the new keyboard layout"
+	./keyboard-remapper.bash --install
     )
 fi

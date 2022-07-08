@@ -5,7 +5,7 @@ hash brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/in
 
 brew install ag coreutils ispell findutils icdiff rlwrap go jq
 
-brew cask install rectangle
+brew install --cask rectangle
 defaults write com.googlecode.iterm2 DisableWindowSizeSnap -integer 1
 
-go get github.com/josephburnett/jd
+go install github.com/josephburnett/jd@latest
