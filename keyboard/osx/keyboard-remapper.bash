@@ -215,6 +215,8 @@ function install () {
     local plist_name='com.teladoc.load-userkeymapping'
     local plist_path="$HOME"/Library/LaunchAgents/"$plist_name".plist
 
+    mkdir -p "$HOME/Library/LaunchAgents/"
+
     cat <<EOF > "$plist_path"
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -239,7 +241,7 @@ function install () {
 </plist>
 EOF
 
-    launchctl unload "$plist_path"
+    launchctl unload "$plist_path" &> /dev/null
     launchctl load "$plist_path"
 }
 
